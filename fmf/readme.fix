@@ -1,0 +1,262 @@
+# ❄️ My Winter Car → MSC Loader FIX
+
+## What is this?
+
+This is a utility tool that prepares **My Winter Car** so it can work with **My Summer Car Loader (MSC Loader)**.
+
+It automatically:
+
+* safely backs up your game
+* renames required files correctly
+* prepares the game structure
+* can optionally install **MSC Loader 1.3.4**
+* logs everything so you always know what happened
+
+In short:
+
+> Click → Fix → Play with Mods 😎
+
+---
+
+# ⚠️ Before You Start
+
+Please read this:
+
+✔ Game must NOT be running
+✔ Steam doesn’t need to be closed, but better if it is
+✔ You need enough free disk space for backup
+✔ Antivirus may complain — add the folder to exceptions if needed
+
+---
+
+# 🛠 Installation
+
+1️⃣ Download the tool
+2️⃣ Extract it anywhere (NOT into Program Files if possible)
+3️⃣ Run using Python 3.10+
+4️⃣ If Windows Defender cries — ignore it, the app just edits game files
+
+---
+
+# 🧭 Interface Overview
+
+### 🔍 Auto Detect Game
+
+The tool automatically searches your drives and tries to find your **My Winter Car** installation.
+If found — it asks you to confirm.
+
+---
+
+### 📂 Browse Folder
+
+Manual selection.
+Choose your game folder where you see files like:
+
+```
+mywintercar.exe
+mywintercar_Data
+```
+
+(or already renamed versions)
+
+---
+
+### 🧯 Apply FIX (Main Button)
+
+This is the most important function.
+
+When you click it:
+✔ Creates a FULL backup of the game
+✔ Renames files:
+
+```
+mywintercar.exe  →  mysummercar.exe
+mywintercar_Data →  mysummercar_Data
+```
+
+✔ Creates a desktop shortcut
+✔ Copies everything from `fmf/` into the game folder (if any files exist)
+
+After this step your Winter Car becomes compatible with MSC Loader.
+
+---
+
+### 🔙 Revert
+
+Changes your game back to Winter Car mode.
+It renames files back:
+
+```
+mysummercar.exe  →  mywintercar.exe
+mysummercar_Data →  mywintercar_Data
+```
+
+Useful if something goes wrong.
+
+---
+
+### 🚀 Install Loader
+
+Installs **MSC Loader 1.3.4** automatically.
+This is the recommended, stable and tested version.
+
+If you want another Loader version:
+
+* You CAN install another one manually
+* However, **no guarantees it will work**
+* Old versions sometimes break
+* New versions sometimes behave unpredictable
+
+That’s why default recommended flow:
+👉 Apply FIX
+👉 Install built-in Loader
+👉 Enjoy
+
+---
+
+### 📁 FMF Folder
+
+There is a folder in the tool directory called:
+
+```
+fmf/
+```
+
+Anything you put inside it will be copied into your game folder AFTER a successful fix.
+
+Useful for:
+✔ Mods
+✔ DLL libraries
+✔ Config files
+✔ Additional patches
+
+Folder structure is preserved.
+
+---
+
+# 🧷 Backups
+
+Before any modification, the tool automatically creates a backup in:
+
+```
+Backups/
+```
+
+Backups are timestamped.
+If anything breaks — simply restore your backup.
+
+---
+
+# 🧠 Logs
+
+Everything the program does is recorded into:
+
+```
+logs/
+```
+
+If something fails — the reason will be there.
+
+---
+
+# ❌ Possible Problems & Solutions
+
+### Game doesn’t launch after FIX
+
+Likely causes:
+
+* Broken mods
+* Wrong Loader version
+* Game update changed something
+
+Solution:
+✔ Revert
+✔ Verify game files in Steam
+✔ Run FIX again
+
+---
+
+### Loader doesn’t detect game
+
+Happens if:
+
+* You installed a custom Loader
+* Loader version is incompatible
+* Folder structure isn’t correct
+
+Solution:
+✔ Use built-in Loader 1.3.4
+✔ Try another version manually
+✔ Read logs
+
+---
+
+### Antivirus warning
+
+Completely normal.
+This tool:
+❌ does NOT steal data
+❌ does NOT contain malware
+❌ does NOT break Steam
+
+It only renames files and copies mods.
+
+---
+
+# 🧨 Risks (Honest Statement)
+
+This tool is safe, BUT:
+
+* You are modifying your game
+* My Winter Car updates may break compatibility
+* Mods are always risky
+
+That’s why:
+✔ Backups are created automatically
+✔ Nothing is modified without your permission
+✔ You can always revert
+
+---
+
+# 🏁 Recommended Usage Order
+
+### If you want easy, safe and stable setup:
+
+1️⃣ Open the tool
+2️⃣ Select or Auto Detect your game
+3️⃣ Click **Apply FIX**
+4️⃣ Wait until logs show success
+5️⃣ Ensure `mysummercar.exe` exists now
+6️⃣ Click **Install Loader**
+7️⃣ Launch the game
+8️⃣ Enjoy mods ❄️🔥
+
+---
+
+### If you want to install your own Loader version:
+
+Follow same steps **but skip Install Loader** and install your Loader manually.
+However: **No guarantees it will work.**
+
+---
+
+# 📜 Legal & Safety Notes
+
+* Tool is free
+* No malicious code
+* Provided “as is”
+* You use it at your own responsibility
+* Not affiliated with Steam / MWC / MSC devs
+
+---
+
+# ❤️ Final Message
+
+This tool was created to:
+
+* save time
+* remove frustration
+* make modding Winter Car easy
+
+If it helped you — enjoy it.
+If something broke — you still have backups 😉
